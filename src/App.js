@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import MainPage from "./Pages/MainPage/index";
 import NewsPage from "./Pages/NewsPage/index";
-import "./styles/style.css";
+
 
 function App() {
     return (
