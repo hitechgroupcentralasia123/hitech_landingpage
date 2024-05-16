@@ -11,8 +11,8 @@ function MainPage() {
   return (
     <div>
       <Hero />
-      {/* <Projects />
-      <Services />
+      <Projects />
+      {/*  <Services />
       <Solutions />
       <Activities />
       <ConsultingServices />

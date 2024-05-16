@@ -261,3 +261,84 @@
   position: absolute;
   transition: top 0.1s linear, left 0.1s linear;
 }
+
+.projects {
+  background-color: #fff;
+}
+
+.projects-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__content {
+  text-align: left;
+}
+
+.projects__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+
+  margin: 150px 0 64px;
+}
+
+.projects__content h2 {
+  font-family: "SF Pro Display";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+}
+
+.projects__content p {
+  max-width: 590px;
+  width: 100%;
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.project-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  font-size: 14px;
+  margin-bottom: 20px;
+  white-space: pre-line;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.project-details {
+  padding: 10px 0;
+  white-space: pre-line;
+}
