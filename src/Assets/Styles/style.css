@@ -307,38 +307,41 @@
   margin-bottom: 40px;
 }
 
-.project-image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+.project-display {
+  display: flex;
+  align-items: flex-start;
 }
 
-.project-description {
-  font-size: 14px;
-  margin-bottom: 20px;
-  white-space: pre-line;
+.project-image {
+  max-width: 545px;
+  max-height: 352px;
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 24px;
 }
 
 .projects-list {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 .project-item {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+  border-top: 1px solid rgba(185, 185, 185, 1);
+  padding: 32px 0;
 }
 
 .project-header {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  font-size: 18px;
-  padding: 10px 0;
-}
-
-.project-details {
-  padding: 10px 0;
-  white-space: pre-line;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
 }
