@@ -10,10 +10,11 @@ const projects = [
 function Projects() {
   return (
     <section className="projects">
-      <h2>Projects</h2>
-      {projects.map((project, index) => (
-        <ProjectItem key={index} project={project} />
-      ))}
+      <div className='container'>
+        <div className='projects_inner'>
+          <div className='projects__content'></div>
+        </div>
+      </div>
     </section>
   );
 }

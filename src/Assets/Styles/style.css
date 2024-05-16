@@ -1,39 +1,54 @@
-@import './reset.css';
+@import "./reset.css";
+@import "./fonts.css";
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 120px;
 }
 
 .navbar {
   position: absolute;
+  top: 48px;
   width: 100%;
-  max-width: 1200px;
-  margin: 48px 120px 0;
-  background-color: white;
-  border-radius: 12px;
-  padding: 15px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 10; /* Добавлено для накладывания на фон */
+  z-index: 999;
+}
 
+.navbar .container {
+  position: relative;
+  z-index: 1;
 }
 
 .navbar__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  max-width: 1200px;
   width: 100%;
+  display: flex;
+  position: relative;
 }
 
-.navbar__logo {
-  height: 50px;
+.navbar__content {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar_left {
+  max-height: 45px;
+  height: 100%;
 }
 
 .navbar_right {
   display: flex;
   align-items: center;
   gap: 40px;
+  max-height: 44px;
+  height: 100%;
 }
 
 .navbar__menu {
@@ -49,7 +64,8 @@
 
 .navbar__menu a {
   text-decoration: none;
-  color: #333;
+  font-family: "SF Pro Display";
+  color: rgba(0, 0, 0, 1);
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -62,6 +78,7 @@
   border: none;
   padding: 12px 24px;
   border-radius: 32px;
+  font-family: "SF Pro Display";
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -74,14 +91,10 @@
 
 .hero {
   position: relative;
-  height: 100vh;
+  height: 900px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
 }
 
 .hero .container {
@@ -99,31 +112,69 @@
   z-index: 0;
 }
 
+.hero_inner {
+  display: flex;
+  align-items: start;
+  color: white;
+}
+
 .hero__content {
-  text-align: center;
-  max-width: 800px;
   z-index: 1;
+  width: 100%;
+  margin: 324px 0 20px;
 }
 
-.hero__content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.hero_main_text {
+  align-items: center;
+  justify-content: left;
+  max-width: 818px;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 218px;
 }
 
-.hero__content p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.hero_text_p {
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+}
+
+.hero_text_h1 {
+  font-family: "SF Pro Display";
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 93.6px;
+}
+
+.hero_textfull_p {
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  max-width: 660px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .hero__experience {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+}
+
+.hero_counter {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
 }
 
 .hero__experience p {
-  font-size: 1.2rem;
+  font-family: "SF Pro Display";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46.8px;
+  text-align: left;
 }
 
 .hero__experience span {
@@ -131,14 +182,35 @@
   font-weight: bold;
 }
 
+.hero_buttonpart {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  max-width: 222px;
+  width: 100%;
+  max-height: 44px;
+  height: 100%;
+}
+
 .hero__button {
   background-color: transparent;
   color: white;
-  border: 2px solid white;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  border-radius: 30px;
-  cursor: pointer;
+  padding: 12px 24px;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  text-align: left;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(255, 253, 245, 1)
+}
+
+.hero__button img {
+  width: 20px;
+  height: 20px;
 }
 
 .hero__button:hover {

@@ -4,8 +4,10 @@ import NavLogo from "../../Assets/Images/image 5.svg";
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="container">
+        <div className="container">
         <div className="navbar__inner">
+            
+        <div className="navbar__content">
           <div className="navbar_left">
             <img src={NavLogo} className="navbar__logo" />
           </div>
@@ -26,8 +28,9 @@ function Navbar() {
             </ul>
             <button className="navbar__button">Contact us</button>
           </div>
+          </div>
         </div>
-      </div>
+        </div>
     </nav>
   );
 }

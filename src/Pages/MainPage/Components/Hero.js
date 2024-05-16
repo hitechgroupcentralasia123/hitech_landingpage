@@ -10,11 +10,12 @@ function Hero() {
       style={{ backgroundImage: `url(${BackGroundPhoto})` }}
     >
       <div className="container">
+      <div className="hero_inner">
         <div className="hero__content">
           <div className="hero_main_text">
-            <p>For a better world</p>
-            <h1>To create green solutions</h1>
-            <p>
+            <p className="hero_text_p">For a better world</p>
+            <h1 className="hero_text_h1">To create green solutions</h1>
+            <p className="hero_textfull_p">
               Market leader in renewable energy sources in Central Asia Hi-Tech
               Group of Companies has a professional team with unique knowledge
               and experience in the development, construction and operation and
@@ -22,12 +23,17 @@ function Hero() {
             </p>
           </div>
           <div className="hero__experience">
+            <div className="hero_counter">
             <p>Our experience</p>
             <span>0MW</span>
+            </div>
+            <div className="hero_buttonpart">
+              <button className="hero__button">
+                Find out more <img src={ArrowIcon} />
+              </button>
+            </div>
           </div>
-          <div className="hero_buttonpart">
-            <button className="hero__button">Find out more <img src={ArrowIcon}/></button>
-          </div>
+        </div>
         </div>
       </div>
     </section>
