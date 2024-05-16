@@ -26,7 +26,7 @@ function Hero() {
           <div className="hero__experience">
             <div className="hero_counter">
             <p>Our experience</p>
-            <span><ExperienceCircles /></span>
+            <ExperienceCircles />
             </div>
             <div className="hero_buttonpart">
               <button className="hero__button">
