@@ -166,7 +166,8 @@
 .hero_counter {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: center;
+  gap: 34px;
 }
 
 .hero__experience p {
@@ -205,7 +206,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 1px solid rgba(255, 253, 245, 1)
+  border: 1px solid rgba(255, 253, 245, 1);
 }
 
 .hero__button img {
@@ -215,4 +216,48 @@
 
 .hero__button:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* CIRCLE */
+.button-container {
+  display: flex;
+}
+
+.outer-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(255, 253, 245, 0.17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.inner-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 253, 245, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.text {
+  font-family: "SF Pro Display";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+  color: white; /* Adjust text color as needed */
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: white; /* Adjust dot color as needed */
+  border-radius: 50%;
+  position: absolute;
+  transition: top 0.1s linear, left 0.1s linear;
 }

@@ -1,7 +1,8 @@
 import React from "react";
-import "../../../Assets/Styles/style.css";
-import BackGroundPhoto from "../../../Assets/Images/BackGroundPhoto.png";
-import ArrowIcon from "../../../Assets/Images/arrow_downward.svg";
+import "../../../../Assets/Styles/style.css";
+import BackGroundPhoto from "../../../../Assets/Images/BackGroundPhoto.png";
+import ArrowIcon from "../../../../Assets/Images/arrow_downward.svg";
+import ExperienceCircles from "./CounterButton";
 
 function Hero() {
   return (
@@ -25,7 +26,7 @@ function Hero() {
           <div className="hero__experience">
             <div className="hero_counter">
             <p>Our experience</p>
-            <span>0MW</span>
+            <span><ExperienceCircles /></span>
             </div>
             <div className="hero_buttonpart">
               <button className="hero__button">
