@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
-import MainPage from "./Pages/MainPage/index";
-import NewsPage from "./Pages/NewsPage/index";
+import MainPage from "./Pages/MainPage/MainPage";
+import NewsPage from "./Pages/NewsPage/NewsPage";
 
 
 function App() {

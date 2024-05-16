@@ -11,12 +11,12 @@ function MainPage() {
   return (
     <div>
       <Hero />
-      <Projects />
+      {/* <Projects />
       <Services />
       <Solutions />
       <Activities />
       <ConsultingServices />
-      <News />
+      <News /> */}
     </div>
   );
 }

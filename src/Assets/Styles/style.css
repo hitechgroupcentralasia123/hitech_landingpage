@@ -1,0 +1,146 @@
+@import './reset.css';
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  margin: 48px 120px 0;
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Добавлено для накладывания на фон */
+
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar__logo {
+  height: 50px;
+}
+
+.navbar_right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+
+.navbar__menu li {
+  display: inline;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.navbar__button {
+  background: linear-gradient(0deg, #2a4c31, #2a4c31),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.navbar__button:hover {
+  background-color: #244622;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.hero__content {
+  text-align: center;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.hero__content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero__content p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero__experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.hero__experience p {
+  font-size: 1.2rem;
+}
+
+.hero__experience span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero__button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
