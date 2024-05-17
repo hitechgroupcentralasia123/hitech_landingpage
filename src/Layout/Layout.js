@@ -1,6 +1,6 @@
 // src/components/Layout/Layout.js
 import React from "react";
-import Footer from "../Components/Footer/index";
+import Footer from "../Components/Footer/Footer";
 import NavbarContainer from "../Components/Header/index";
 import "../Assets/Styles/style.css";
 

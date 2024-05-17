@@ -307,12 +307,8 @@
   margin-bottom: 40px;
 }
 
-.project-display {
-  display: flex;
-  align-items: flex-start;
-}
-
 .project-image {
+  display: flex;
   max-width: 545px;
   max-height: 352px;
   width: 100%;
@@ -322,7 +318,8 @@
 }
 
 .projects-list {
-  width: 50%;
+  max-width: 591px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-family: "SF Pro Display";
@@ -380,7 +377,7 @@
   text-align: left;
 }
 
-.consulting-image {
+.consulting-image img {
   max-width: 1200px;
   width: 100%;
   max-height: 562px;
@@ -609,17 +606,20 @@
 .booking_form {
   display: flex;
   align-items: center;
+  border-bottom: 2px solid rgba(255, 253, 245, 1);
 }
 
 .booking_form input {
   flex: 1;
-  padding: 10px;
-  font-size: 1rem;
+  padding: 0 0 12px;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
   border: none;
-  border-bottom: 2px solid #fff;
   background: transparent;
   color: #fff;
-  margin-right: 10px;
   outline: none;
 }
 
@@ -627,11 +627,184 @@
   background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 28px;
   cursor: pointer;
   transition: color 0.3s;
 }
 
 .booking_form button:hover {
-  color: #ccc;
+  color: rgba(255, 253, 245, 1);
+}
+
+/* NEWS */
+
+.news_inner {
+  margin-bottom: 191px;
+}
+
+.news_header {
+  font-family: "SF Pro Displa";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.news_content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.news_item {
+  position: relative;
+  max-width: 387px;
+  width: 100%;
+  max-height: 299px;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.news_title {
+  position: absolute;
+  bottom: 10px;
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+  padding: 0px 20px 20px;
+}
+
+.view_all {
+  display: flex;
+  align-items: end;
+  justify-content: left;
+  padding-left: 20px;
+  padding-bottom: 25px;
+  border: 1px solid #2a4c31;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: 387px;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  gap: 46px;
+}
+
+.view_all p {
+  font-family: "SF Pro Display";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.2px;
+  letter-spacing: -0.24px;
+  text-align: left;
+  color: linear-gradient(0deg, #2a4c31, #2a4c31),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.view_all_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.button_circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2a4c31;
+  border-radius: 32px;
+  width: 72px;
+  height: 48px;
+}
+
+.view_all:hover {
+  background-color: #2a4c31;
+}
+
+.view_all:hover p,
+.view_all:hover .view_all_button {
+  color: #fff;
+}
+
+/* Footer */
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.footer__inner {
+  display: flex;
+  align-items: flex-start;
+  padding: 44px 0 77px;
+}
+
+.footer__left {
+  max-width: 182px;
+  width: 100%;
+  margin-right: 123.35px;
+}
+
+.footer__center {
+  margin-right: 255px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.footer__logo {
+  width: 150px;
+  height: auto;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.footer__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__info {
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  text-align: left;
+
+  margin: 5px 0;
+}
+
+.footer__email {
+  font-family: "SF Pro Display";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47.73px;
+  text-align: left;
+}
+
+.footer__right{
+  max-width: 77px;
+  width: 100%;
+}
+
+.footer__right p {
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.footer__right p:hover {
+  text-decoration: underline;
 }

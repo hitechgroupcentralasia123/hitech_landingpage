@@ -17,9 +17,10 @@ function MainPage() {
       <Activities />
       <ConsultingServices />
       <BookingSection />
+      <News />
       {/*  <Services />
       <ConsultingServices />
-      <News /> */}
+       */}
     </div>
   );
 }
