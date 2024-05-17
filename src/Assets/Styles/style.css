@@ -345,3 +345,284 @@
   font-weight: 600;
   line-height: 20.8px;
 }
+
+/* CONSULTING */
+
+.consulting-services {
+  padding: 150px 0;
+  background-color: #fff;
+}
+
+.consulting-text {
+  display: flex;
+  flex-direction: row;
+  gap: 137px;
+  margin-bottom: 40px;
+}
+
+.consulting-text h2 {
+  max-width: 473px;
+  width: 100%;
+  font-family: "SF Pro Display";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  text-align: left;
+}
+
+.consulting-text p {
+  max-width: 590px;
+  width: 100%;
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+.consulting-image {
+  max-width: 1200px;
+  width: 100%;
+  max-height: 562px;
+  height: 100%;
+  border-radius: 24px;
+  margin-bottom: 40px;
+}
+
+.trusted-by {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 20px;
+}
+
+.trusted-by p {
+  font-family: "SF Pro Display";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46.8px;
+  text-align: left;
+  max-width: 285px;
+  width: 100%;
+}
+
+.logos {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding: 16.21px 0;
+  max-width: 893.35px;
+  width: 100%;
+  max-height: 61.59px;
+  height: 100%;
+}
+
+.logo-container {
+  display: flex;
+  animation: scroll 10s linear infinite;
+  gap: 70px;
+}
+
+.logos img {
+  max-width: 194px;
+  width: 100%;
+  max-height: 60px;
+  height: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* SOLUTIONS */
+
+.solutions {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.solutions_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+
+.solutions__content {
+  text-align: left;
+}
+
+.solutions__text {
+  display: flex;
+  flex-direction: row;
+  gap: 131px;
+  margin-bottom: 64px;
+}
+
+.solutions__content h2 {
+  max-width: 479px;
+  width: 100%;
+  font-family: "SF Pro Display";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+}
+
+.solutions__content p {
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  max-width: 590px;
+  width: 100%;
+}
+
+.solutions__stats {
+  display: flex;
+  width: 100%;
+  gap: 90px;
+}
+
+.stat {
+  text-align: left;
+  color: rgba(4, 4, 4, 1);
+  max-width: 188px;
+  width: 100%;
+  border-top: 1px solid rgba(4, 4, 4, 1);
+}
+
+.stat h3 {
+  font-family: "SF Pro Display";
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 83.2px;
+  margin-bottom: 12px;
+}
+
+.stat span {
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+/* ACTIVITIES */
+
+.activities {
+  background: linear-gradient(0deg, #2a4c31, #2a4c31),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  color: white;
+  padding: 80px 0;
+}
+
+.activities_inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 137px;
+}
+
+.actovities_header {
+  font-family: "SF Pro Display";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  text-align: left;
+  max-width: 473px;
+  width: 100%;
+}
+
+.activities__content {
+  max-width: 590px;
+  width: 100%;
+}
+
+.activities__content_p {
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: rgba(255, 253, 245, 1);
+}
+
+/* BOOKING */
+
+.booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.booking_inner {
+  display: flex;
+  align-items: center;
+  background-color: #2A4C31;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.booking_image {
+  flex: 1;
+}
+
+.booking_image img {
+  width: 100%;
+  height: auto;
+}
+
+.booking_content {
+  flex: 1;
+  padding: 40px;
+  color: #fff;
+}
+
+.booking_content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.booking_content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.booking_form {
+  display: flex;
+  align-items: center;
+}
+
+.booking_form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  margin-right: 10px;
+  outline: none;
+}
+
+.booking_form button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.booking_form button:hover {
+  color: #ccc;
+}
