@@ -557,22 +557,21 @@
 /* BOOKING */
 
 .booking {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
+  padding: 0 0 150px;
   background-color: #fff;
 }
 
 .booking_inner {
   display: flex;
   align-items: center;
-  background-color: #2A4C31;
-  border-radius: 8px;
+  background-color: rgba(42, 76, 49, 1);
+  border-radius: 30px;
   overflow: hidden;
 }
 
 .booking_image {
+  max-width: 545px;
+  width: 100%;
   flex: 1;
 }
 
@@ -583,18 +582,28 @@
 
 .booking_content {
   flex: 1;
-  padding: 40px;
+  max-width: 443px;
+  width: 100%;
+  padding: 102px 114px 98px 102px;
   color: #fff;
 }
 
 .booking_content h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-family: "SF Pro Display";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46.8px;
+  text-align: left;
+  margin-bottom: 12px;
 }
 
 .booking_content p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  margin-bottom: 44px;
 }
 
 .booking_form {
