@@ -742,17 +742,17 @@
 .footer__inner {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
   padding: 44px 0 77px;
 }
 
 .footer__left {
   max-width: 182px;
   width: 100%;
-  margin-right: 123.35px;
 }
 
 .footer__center {
-  margin-right: 255px;
   max-width: 360px;
   width: 100%;
 }
@@ -779,7 +779,6 @@
   font-weight: 500;
   line-height: 22.4px;
   text-align: left;
-
   margin: 5px 0;
 }
 
@@ -791,7 +790,7 @@
   text-align: left;
 }
 
-.footer__right{
+.footer__right {
   max-width: 77px;
   width: 100%;
 }
