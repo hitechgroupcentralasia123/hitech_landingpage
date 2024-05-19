@@ -307,7 +307,27 @@
   .activities {
     padding: 48px 0;
   }
+
+  .consulting-services {
+    padding: 100px 0;
+  }
   
+  .consulting-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .trusted-by {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .trusted-by p {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 985px) {
@@ -366,6 +386,29 @@
 
   .activities {
     padding: 80px 0;
+  }
+
+  .consulting-services {
+    padding: 150px 0;
+  }
+  
+  .consulting-text {
+    display: flex;
+    flex-direction: row;
+    gap: 137px;
+    margin-bottom: 40px;
+  }
+
+  .trusted-by {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .trusted-by p {
+    font-size: 36px;
+    max-width: 285px;
+    width: 100%;
   }
 }
 
@@ -641,15 +684,7 @@
 /* CONSULTING */
 
 .consulting-services {
-  padding: 150px 0;
   background-color: #fff;
-}
-
-.consulting-text {
-  display: flex;
-  flex-direction: row;
-  gap: 137px;
-  margin-bottom: 40px;
 }
 
 .consulting-text h2 {
@@ -683,19 +718,14 @@
 
 .trusted-by {
   display: flex;
-  flex-direction: row;
   text-align: left;
-  gap: 20px;
 }
 
 .trusted-by p {
   font-family: "SF Pro Display";
-  font-size: 36px;
   font-weight: 500;
   line-height: 46.8px;
   text-align: left;
-  max-width: 285px;
-  width: 100%;
 }
 
 .logos {

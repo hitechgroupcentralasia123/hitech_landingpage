@@ -17,6 +17,7 @@ function ConsultingServices() {
             <p>
               Here, in the Hi-Tech Group of companies, we sincerely believe that new technologies and solutions, new green projects will help preserve and enhance the world in which we live. We fully understand that it is only in our power to leave our descendants a clean green planet.
             <br />
+            <br />
               We have the necessary knowledge and experience that will allow us to offer our customers comprehensive solutions for the development, implementation and project management in the renewable energy industry.
             </p>
           </div>
