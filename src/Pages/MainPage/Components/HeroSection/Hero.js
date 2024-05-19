@@ -22,6 +22,9 @@ function Hero() {
               and experience in the development, construction and operation and
               maintenance of renewable energy projects.
             </p>
+            <button className="hero__button_mobile">
+            Contact us
+          </button>
           </div>
           <div className="hero__experience">
             <div className="hero_counter">
