@@ -118,7 +118,7 @@
     padding: 15px 20px;
   }
 
-  .navbar_left img{
+  .navbar_left img {
     max-width: 150px;
     max-height: 37.63px;
     width: 100%;
@@ -167,6 +167,36 @@
   .navbar__burger {
     display: flex;
   }
+
+  .hero_counter p {
+    display: none;
+  }
+
+  .hero_buttonpart {
+    display: none;
+  }
+
+  .hero__experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero_text_h1 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 985px) {
+  .hero__experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero_text_h1 {
+    font-size: 72px;
+  }
 }
 
 .hero {
@@ -194,6 +224,8 @@
 
 .hero__content {
   z-index: 1;
+  max-width: 1200px;
+  width: 100%;
   margin: 324px 0 20px;
 }
 
@@ -215,7 +247,6 @@
 
 .hero_text_h1 {
   font-family: "SF Pro Display";
-  font-size: 72px;
   font-weight: 700;
   line-height: 93.6px;
 }
@@ -232,7 +263,6 @@
 
 .hero__experience {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -257,7 +287,6 @@
 }
 
 .hero_buttonpart {
-  display: flex;
   justify-content: center;
   align-items: end;
   max-width: 222px;
