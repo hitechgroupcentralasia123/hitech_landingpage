@@ -271,7 +271,7 @@
   }
 
   .solutions__stats {
-    gap: 40px;
+    gap: 10px;
   }
 
   .stat h3 {
@@ -291,6 +291,21 @@
   .solutions__content p {
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .stat {
+    max-width: 167px;
+    width: 100%;
+  }
+
+  .activities_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .activities {
+    padding: 48px 0;
   }
   
 }
@@ -336,6 +351,21 @@
   .solutions__content p {
     font-size: 20px;
     line-height: 26px;
+  }
+
+  .stat {
+    max-width: 188px;
+    width: 100%;
+  }
+
+  .activities_inner {
+    display: flex;
+    flex-direction: row;
+    gap: 137px;
+  }
+
+  .activities {
+    padding: 80px 0;
   }
 }
 
@@ -748,8 +778,6 @@
 .stat {
   text-align: left;
   color: rgba(4, 4, 4, 1);
-  max-width: 188px;
-  width: 100%;
   border-top: 1px solid rgba(4, 4, 4, 1);
 }
 
@@ -775,15 +803,12 @@
   background: linear-gradient(0deg, #2a4c31, #2a4c31),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   color: white;
-  padding: 80px 0;
 }
 
 .activities_inner {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 137px;
 }
 
 .actovities_header {
