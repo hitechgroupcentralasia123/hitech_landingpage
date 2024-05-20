@@ -1,9 +1,9 @@
 import React from "react";
 
-function NewsItem({ news }) {
+function NewsItem({ news, isFirst }) {
   if (!news.image) {
     return (
-      <div className=" news_item view_all">
+      <div className="view_all">
         <p>View all News</p>
         <button className="view_all_button">
           <div className="button_circle">→</div>
@@ -12,8 +12,8 @@ function NewsItem({ news }) {
     );
   }
   return (
-    <div className="news_item">
-      <img src={news.image} alt={news.title} />
+    <div className={`news_item ${isFirst ? "first_news_item" : ""}`}>
+      <img src={news.image} alt={news.title} className="news_photo"/>
       <div className="news_title">{news.title}</div>
     </div>
   );

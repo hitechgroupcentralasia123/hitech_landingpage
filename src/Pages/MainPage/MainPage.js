@@ -19,7 +19,6 @@ function MainPage() {
       <BookingSection />
       <News />
       {/*  <Services />
-      <ConsultingServices />
        */}
     </div>
   );

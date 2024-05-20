@@ -33,11 +33,6 @@ function ConsultingServices() {
                 <img src={CompanyLogo3} alt="TBEA" />
                 <img src={CompanyLogo4} alt="Huawei" />
                 <img src={CompanyLogo5} alt="Huawei" />
-                <img src={CompanyLogo1} alt="Risen5" />
-                <img src={CompanyLogo2} alt="SEPCO5" />
-                <img src={CompanyLogo3} alt="TBEA5" />
-                <img src={CompanyLogo4} alt="Huawei5" />
-                <img src={CompanyLogo5} alt="Huawei5" />
               </div>
             </div>
           </div>
