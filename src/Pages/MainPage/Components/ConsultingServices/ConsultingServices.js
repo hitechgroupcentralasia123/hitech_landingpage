@@ -1,6 +1,11 @@
 import React from "react";
 import "../../../../Assets/Styles/style.css"; // Import the CSS file
-import {Logo1, Logo2, Logo3, Logo4, Logo5, Logo6} from "../../../../Assets/Images/company/index";
+import Logo1 from "../../../../Assets/Images/company/LogoRisen.svg";
+import Logo2 from "../../../../Assets/Images/company/image 10 (1).svg";
+import Logo3 from "../../../../Assets/Images/company/image 10.svg";
+import Logo4 from "../../../../Assets/Images/company/image 11.svg";
+import Logo5 from "../../../../Assets/Images/company/image 9.svg";
+import Logo6 from "../../../../Assets/Images/company/sepcoiii_logo (1) 2.svg";
 import ConsultingPhoto from "../../../../Assets/Images/ConsultingPhoto.png";
 
 function ConsultingServices() {

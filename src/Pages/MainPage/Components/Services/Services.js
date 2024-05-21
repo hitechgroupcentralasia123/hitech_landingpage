@@ -12,7 +12,7 @@ const services = [
   { name: 'Owner\'s Engineer Service', details: '...', image: Photo3 },
   { name: 'Construction Service', details: '...', image: Photo4 },
   { name: 'Owner\'s Engineer Service', details: '...', image: Photo5 },
-  // добавьте остальные сервисы
+  // add more services as needed
 ];
 
 function Services() {
