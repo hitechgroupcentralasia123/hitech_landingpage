@@ -13,13 +13,12 @@ function MainPage() {
     <div>
       <Hero />
       <Projects />
+      <Services />
       <Solutions />
       <Activities />
       <ConsultingServices />
       <BookingSection />
       <News />
-      {/*  <Services />
-       */}
     </div>
   );
 }
