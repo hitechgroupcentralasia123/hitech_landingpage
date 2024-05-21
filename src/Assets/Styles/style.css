@@ -213,14 +213,13 @@
   }
 
   .projects__content h2 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 36px;
+    line-height: 46px;
   }
 
   .projects__content p {
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 20px;
   }
 
   .project-display {
@@ -247,11 +246,9 @@
   }
 
   .projects__text {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
     margin: 100px 0 20px;
+    gap: 16px;
   }
 
   .project-details {
@@ -264,7 +261,7 @@
 
   .solutions__text {
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
     margin-bottom: 32px;
   }
 
@@ -293,10 +290,6 @@
     line-height: 20px;
   }
 
-  .solutions__content h2 {
-    font-size: 36px;
-  }
-
   .solutions_inner {
     display: flex;
   }
@@ -323,7 +316,7 @@
   }
 
   .activities {
-    padding: 48px 0;
+    padding: 70px 0;
   }
 
   .consulting-services {
@@ -344,6 +337,7 @@
   }
 
   .trusted-by p {
+    line-height: 31.2px;
     font-size: 24px;
   }
 
@@ -355,6 +349,12 @@
     flex: 1;
     padding: 48px 18px 57px;
     color: #fff;
+  }
+
+  .booking_image {
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
   }
 
   .news_content {
@@ -386,7 +386,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 70px;
+    justify-content: space-between;
   }
 
   .footer__center {
@@ -402,6 +402,40 @@
   .footer__logo {
     width: 180px;
     height: auto;
+  }
+
+  .consulting-text h2 {
+    font-size: 36px;
+    line-height: 46.8px;
+  }
+
+  .consulting-text p {
+    font-size: 16px;
+    line-height: 22.4pxpx;
+  }
+
+  .consulting-image img{
+    margin-bottom: 20px;
+  }
+
+  .logos {
+    max-height: 49px;
+  }
+
+  .actovities_header {
+    font-size: 36px;
+    line-height: 46.8px;
+  }
+
+  .activities__content_p {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  .booking_content h2 {
+    font-size: 24px;
+    line-height: 31.2px;
+    margin-bottom: 12px;
   }
 }
 
@@ -428,6 +462,12 @@
     margin: 150px 0 64px;
   }
 
+  .projects__content h2 {
+    font-size: 48px;
+    line-height: 62.4px;
+  }
+
+
   .project-image {
     margin-right: 20px;
   }
@@ -440,6 +480,8 @@
 
   .solutions__content h2 {
     font-size: 48px;
+    
+    line-height: 62.4px;
   }
 
   .solutions__content p {
@@ -504,6 +546,7 @@
     font-size: 36px;
     max-width: 285px;
     width: 100%;
+    line-height: 42px;
   }
 
   .booking_image {
@@ -529,6 +572,8 @@
   .projects__content p {
     max-width: 590px;
     width: 100%;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .solutions__content p {
@@ -572,6 +617,47 @@
   .footer__email {
     font-size: 40px;
     line-height: 47.73px;
+  }
+
+  .consulting-text h2 {
+    font-size: 48px;
+    line-height: 62.4px;
+  }
+
+  .consulting-text p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .consulting-image img{
+    margin-bottom: 40px;
+  }
+
+  .logos {
+    padding: 16.21px 0;
+    max-height: 61.59px;
+  }
+
+  .actovities_header {
+    font-size: 48px;
+    line-height: 62.4px;
+  }
+
+  .activities__content_p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .booking_content h2 {
+    font-size: 36px;
+    line-height: 46.8px;
+    margin-bottom: 12px;
+  }
+
+  .booking_content p {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 44px;
   }
 }
 
@@ -679,7 +765,6 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 22.4px;
-  text-align: left;
   border-radius: 32px;
   display: flex;
   align-items: center;
@@ -761,17 +846,13 @@
 
 .projects__content h2 {
   font-family: "SF Pro Display";
-  font-size: 48px;
   font-weight: 500;
-  line-height: 62.4px;
 }
 
 .projects__content p {
   width: 100%;
   font-family: "SF Pro Display";
-  font-size: 20px;
   font-weight: 400;
-  line-height: 26px;
 }
 
 .project-display {
@@ -833,18 +914,14 @@
 .consulting-text h2 {
   width: 100%;
   font-family: "SF Pro Display";
-  font-size: 48px;
   font-weight: 500;
-  line-height: 62.4px;
   text-align: left;
 }
 
 .consulting-text p {
   width: 100%;
   font-family: "SF Pro Display";
-  font-size: 20px;
   font-weight: 400;
-  line-height: 26px;
   text-align: left;
 }
 
@@ -853,7 +930,6 @@
   max-height: 562px;
   height: 100%;
   border-radius: 24px;
-  margin-bottom: 40px;
 }
 
 .trusted-by {
@@ -864,7 +940,6 @@
 .trusted-by p {
   font-family: "SF Pro Display";
   font-weight: 500;
-  line-height: 46.8px;
   text-align: left;
 }
 
@@ -872,9 +947,7 @@
   display: flex;
   overflow: hidden;
   position: relative;
-  padding: 16.21px 0;
   width: 100%;
-  max-height: 61.59px;
   height: 100%;
 }
 
@@ -933,7 +1006,6 @@
   width: 100%;
   font-family: "SF Pro Display";
   font-weight: 500;
-  line-height: 62.4px;
 }
 
 .solutions__content p {
@@ -982,9 +1054,7 @@
 
 .actovities_header {
   font-family: "SF Pro Display";
-  font-size: 48px;
   font-weight: 500;
-  line-height: 62.4px;
   text-align: left;
   max-width: 473px;
   width: 100%;
@@ -996,9 +1066,7 @@
 
 .activities__content_p {
   font-family: "SF Pro Display";
-  font-size: 20px;
   font-weight: 400;
-  line-height: 26px;
   text-align: left;
   color: rgba(255, 253, 245, 1);
 }
@@ -1030,18 +1098,13 @@
 
 .booking_content h2 {
   font-family: "SF Pro Display";
-  font-size: 36px;
   font-weight: 500;
-  line-height: 46.8px;
   text-align: left;
-  margin-bottom: 12px;
 }
 
 .booking_content p {
   font-family: "SF Pro Display";
-  font-size: 20px;
   font-weight: 400;
-  line-height: 26px;
   text-align: left;
   margin-bottom: 44px;
 }
