@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import MainPage from "./Pages/MainPage/MainPage";
-import NewsPage from "./Pages/NewsPage/NewsPage";
+import Blog from "./Pages/NewsPage/Blog";
+import SinglePost from "./Pages/NewsPage/SinglePost";
+import ErrorPage from "./Pages/Error";
 
 
 function App() {
@@ -18,11 +20,25 @@ function App() {
                     }
                 />
                 <Route
-                    path="/news"
+                    path="/blog"
                     element={
                         <Layout>
-                            <NewsPage />
+                            <Blog />
                         </Layout>
+                    }
+                />
+            <Route
+                    path="/blog/:slug"
+                    element={
+                        <Layout>
+                            <SinglePost />
+                        </Layout>
+                    }
+                />
+                <Route
+                    path="*"
+                    element={
+                        <ErrorPage/>
                     }
                 />
             </Routes>
