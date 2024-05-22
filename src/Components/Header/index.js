@@ -41,10 +41,10 @@ function Navbar() {
                     <a href="#about" onClick={() => handleNavigation(null, 'about')}>About us</a>
                   </li>
                   <li>
-                    <a href="#projects" onClick={() => handleNavigation(null, 'projects')}>Projects</a>
+                    <a href="/" onClick={() => handleNavigation(null, 'projects')}>Projects</a>
                   </li>
                   <li>
-                    <Link to="/news" onClick={() => handleNavigation('/news')}>News</Link>
+                    <Link to="/blog" onClick={() => handleNavigation('/news')}>News</Link>
                   </li>
                   <li>
                     <a href="#contacts" onClick={() => handleNavigation(null, 'contacts')}>Contacts</a>
