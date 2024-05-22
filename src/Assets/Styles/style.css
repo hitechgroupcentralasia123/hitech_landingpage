@@ -369,11 +369,8 @@
     margin-bottom: 56px;
   }
 
-  .news_item {
-    width: 100%;
-  }
 
-  .news_item img {
+  .news_item {
     width: 100%;
     max-height: 300px;
     height: 100%;
@@ -1278,7 +1275,20 @@
 .news_content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.news_content a{
+  max-width: 387px;
+  width: 100%;
+  height: 299px;
+  border-radius: 24px;
+}
+
+.news_content img{
+  max-width: 387px;
+  width: 100%;
+  height: 299px;
+  border-radius: 24px;
 }
 
 .news_item {
@@ -1287,11 +1297,7 @@
   vertical-align: top;
 }
 
-.news_item img {
-  width: 100%; /* Ensure images take full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 24px;
-}
+
 
 .news_text_other {
   position: absolute; /* Absolute positioning for the text */
@@ -1307,7 +1313,7 @@
   text-align: left;
 }
 
-.news_text {
+.news_title {
   position: absolute; /* Absolute positioning for the text */
   bottom: 20px; /* Position from the bottom */
   left: 20px; /* Position from the left */
@@ -1321,7 +1327,7 @@
   text-align: left;
 }
 
-.first_news_item img {
+.first_news{
   border: 1px solid #2a4c31;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -1527,4 +1533,45 @@
   border-radius: 12px;
 }
 
+.header_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog_title {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.post_details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 15px;
+}
+
+.author_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.blog__image {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.block__content {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20px;
+  margin-bottom: 40px;
+  max-width: 793px;
+  width: 100%;
+}
 
