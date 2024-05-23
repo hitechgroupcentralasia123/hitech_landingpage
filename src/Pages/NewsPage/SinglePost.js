@@ -35,7 +35,7 @@ export default function SinglePost() {
   }, [slug]);
 
   if (isLoading) {
-    return <h1>Loading...</h1>;
+    return <h1 style={{margin: "300px 120px"}}>Loading...</h1>;
   }
 
   return (

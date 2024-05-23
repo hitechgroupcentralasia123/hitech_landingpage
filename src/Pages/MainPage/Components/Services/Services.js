@@ -10,7 +10,7 @@ const services = [
   {
     name: "Our role",
     details:
-      "Hi-Tech Group is a seasoned team with a decade of expertise in executing renewable energy projects across Central Asia.",
+      "Hi-Tech Group is a seasoned team with a decade of expertise  in executing renewable energy projects across Central Asia.",
     image: Photo1,
   },
   {
