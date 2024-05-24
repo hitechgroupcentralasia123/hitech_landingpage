@@ -25,12 +25,12 @@ function Hero() {
             <button className="hero__button_mobile">
             Contact us
           </button>
-          </div>
-          <div className="hero__experience">
-            <div className="hero_counter">
+          <div className="hero_counter">
             <p>Our experience</p>
             <ExperienceCircles />
             </div>
+          </div>
+          <div className="hero__experience">
             <div className="hero_buttonpart">
               <button className="hero__button">
                 Find out more <img src={ArrowIcon} />

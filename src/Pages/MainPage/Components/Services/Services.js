@@ -68,6 +68,7 @@ function Services() {
                 <img src={service.image} alt={service.name} />
                 <div className="service-title">{service.name}</div>
                 <div className="service-text">
+                <div className="service-title-details">{service.name}</div>
                   <p className="service-details">{service.details}</p>
                 </div>
               </div>

@@ -36,7 +36,7 @@ const CounterButton = () => {
           }}
         ></div>
         <div className="inner-circle">
-          <div className="text">{count}</div>
+          <div className="text">{count}MW</div>
         </div>
       </div>
     </div>

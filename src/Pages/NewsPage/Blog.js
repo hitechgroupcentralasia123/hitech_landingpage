@@ -45,7 +45,7 @@ export default function Blog() {
     if (text.length <= length) {
       return text;
     }
-    return text.slice(0, length) + '...';
+    return text.slice(0, length) + "...";
   };
 
   const getFirstSentence = (text) => {
@@ -58,31 +58,33 @@ export default function Blog() {
       <div className="container">
         <h1 className="blog_header">News</h1>
         <div className="latest_post">
-          <img
-            src={latestPost.mainImage.asset.url}
-            alt={latestPost.title}
-            className="post_image"
-          />
-          <div className="post_content">
-            <div className="post_text">
-              <h2 className="post_title">{latestPost.title}</h2>
-              <p className="post_body">
-                {truncateText(latestPost.body[0].children[0].text, 100)}
-              </p>
+          <Link to={`/blog/${latestPost.slug.current}`}>
+            <img
+              src={latestPost.mainImage.asset.url}
+              alt={latestPost.title}
+              className="post_image"
+            />
+            <div className="post_content">
+              <div className="post_text">
+                <h2 className="post_title">{latestPost.title}</h2>
+                <p className="post_body">
+                  {truncateText(latestPost.body[0].children[0].text, 100)}
+                </p>
+              </div>
+              <div className="post_footer">
+                <img
+                  src={latestPost.author.image.asset.url}
+                  alt={latestPost.author.name}
+                  className="author_image"
+                />
+                <span className="author_name">{latestPost.author.name}</span>
+                <div className="dot_main"></div>
+                <span className="post_date">
+                  {new Date(latestPost.publishedAt).toLocaleDateString()}
+                </span>
+              </div>
             </div>
-            <div className="post_footer">
-              <img
-                src={latestPost.author.image.asset.url}
-                alt={latestPost.author.name}
-                className="author_image"
-              />
-              <span className="author_name">{latestPost.author.name}</span>
-              <div className="dot_main"></div>
-              <span className="post_date">
-                {new Date(latestPost.publishedAt).toLocaleDateString()}
-              </span>
-            </div>
-          </div>
+          </Link>
         </div>
         <div className="other_posts">
           {otherPosts.map((post) => (
@@ -93,19 +95,28 @@ export default function Blog() {
                 className="row_post_image"
               />
               <div className="row_post_content">
-                <h4 className="row_post_title">{post.title}</h4>
-                <p className="row_post_body">{getFirstSentence(post.body[0].children[0].text)}</p>
-                <div className="row_post_footer">
-                  <span className="author_name">{post.author.name}</span>
-                  <div className="dot_main"></div>
-                  <span className="post_date">
-                    {new Date(post.publishedAt).toLocaleDateString()}
-                  </span>
-                </div>
+                <Link to={`/blog/${post.slug.current}`}>
+                  <h4 className="row_post_title">{post.title}</h4>
+                  <p className="row_post_body">
+                    {getFirstSentence(post.body[0].children[0].text)}
+                  </p>
+                  <div className="row_post_footer">
+                    <img
+                      src={post.author.image.asset.url}
+                      alt={post.author.name}
+                      className="author_image"
+                    />
+                    <span className="author_name">{post.author.name}</span>
+                    <div className="dot_main"></div>
+                    <span className="post_date">
+                      {new Date(post.publishedAt).toLocaleDateString()}
+                    </span>
+                  </div>
+                </Link>
               </div>
               <button className="read_more_button">
                 <Link to={`/blog/${post.slug.current}`} className="arrow_link">
-                  <img src={LogoFull} className="logo_fullart"/>
+                  <img src={LogoFull} className="logo_fullart" />
                 </Link>
               </button>
             </article>

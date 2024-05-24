@@ -47,6 +47,7 @@ export default function SinglePost() {
           {singlePost.authorImage && (
             <img src={singlePost.authorImage} alt={singlePost.authorName} className="author_image" />
           )}
+          <div className="dot_main"></div>
           <p className="author_name">{singlePost.authorName}</p>
           <div className="dot_main"></div>
           <span className="post_date">{new Date(singlePost.publishedAt).toLocaleDateString()}</span>
