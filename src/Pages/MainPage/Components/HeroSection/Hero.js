@@ -38,7 +38,6 @@ function Hero() {
               <button className="hero__button">
                 Find out more <img src={ArrowIcon} />
               </button>
-            
           </div>
         </div>
         </div>

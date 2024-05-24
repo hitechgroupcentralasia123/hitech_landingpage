@@ -861,6 +861,7 @@
   line-height: 22.4px;
   overflow: hidden;
   white-space: pre-line; /* Позволяет переносу строк */
+  margin-top: 20px;
 }
 
 /* CONSULTING */
