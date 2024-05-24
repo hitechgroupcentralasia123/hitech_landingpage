@@ -781,6 +781,10 @@ text-align: left;
     width: 100%;
   }
 
+  .block__content{
+    margin-bottom: 100px;
+  }
+
 }
 
 @media (min-width: 800px) {
@@ -802,6 +806,10 @@ text-align: left;
   .hero__button_mobile {
     display: none;
   }  
+
+  .block__content{
+    margin-bottom: 180px;
+  }
 }
 
 .projects {
@@ -1582,7 +1590,6 @@ text-align: left;
 .block__content {
   font-family: "SF Pro Display", sans-serif;
   font-size: 20px;
-  margin-bottom: 180px;
   max-width: 793px;
   width: 100%;
 }

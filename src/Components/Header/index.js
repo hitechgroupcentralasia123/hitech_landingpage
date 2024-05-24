@@ -31,7 +31,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="container">
         <div className="navbar__inner">
-          <div className={`navbar__content ${location.pathname === '/blog' ? 'navbar-news' : 'navbar-main'}`}>
+          <div className={`navbar__content ${location.pathname === '/blog' || '/blog/:slug'? 'navbar-news' : 'navbar-main'}`}>
             <div className="navbar_left">
               <img src={NavLogo} className="navbar__logo" alt="Logo" />
             </div>
