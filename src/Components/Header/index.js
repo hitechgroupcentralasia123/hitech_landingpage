@@ -35,6 +35,9 @@ function Navbar() {
               <img src={NavLogo} className="navbar__logo" alt="Logo" />
             </div>
             <div className="navbar_right">
+              <button className="navbar__burger" onClick={toggleMenu}>
+                <img src={isMenuOpen ? XIcon : Burger} alt="Menu" />
+              </button>
               <div className={`navbar__menu-container ${isMenuOpen ? "open" : ""}`}>
                 <ul className="navbar__menu">
                   <li>
@@ -52,9 +55,6 @@ function Navbar() {
                 </ul>
                 <button className="navbar__button" onClick={() => handleNavigation(null, 'footer')}>Contact us</button>
               </div>
-              <button className="navbar__burger" onClick={toggleMenu}>
-                <img src={isMenuOpen ? XIcon : Burger} alt="Menu" />
-              </button>
             </div>
           </div>
         </div>

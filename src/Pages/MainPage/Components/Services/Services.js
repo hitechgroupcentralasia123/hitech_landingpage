@@ -66,8 +66,8 @@ function Services() {
                 onMouseLeave={() => handleMouseLeave(index)}
               >
                 <img src={service.image} alt={service.name} />
+                <div className="service-title">{service.name}</div>
                 <div className="service-text">
-                  <h3 className="service-title">{service.name}</h3>
                   <p className="service-details">{service.details}</p>
                 </div>
               </div>
