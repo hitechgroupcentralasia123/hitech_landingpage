@@ -14,16 +14,16 @@ const CounterButton = () => {
           return prevCount;
         }
       });
-    }, 1); // Change the number to speed up or slow down the count
+    }, 0.01); // Уменьшение интервала для ускорения счетчика
 
     return () => clearInterval(interval);
   }, []);
 
   const rotationDegree = (count / 841) * 360;
-  const radius = 60; // Radius of the outer circle (half of 120px)
-  const radians = ((rotationDegree - 90) * Math.PI) / 180; // Subtract 90 degrees to start from top
-  const dotX = radius + radius * Math.cos(radians) - 4; // Subtract half of dot's width to center it
-  const dotY = radius + radius * Math.sin(radians) - 4; // Subtract half of dot's height to center it
+  const radius = 60; // Радиус внешнего круга (половина от 120px)
+  const radians = ((rotationDegree - 90) * Math.PI) / 180; // Вычитание 90 градусов для старта сверху
+  const dotX = radius + radius * Math.cos(radians) - 4; // Вычитание половины ширины точки для центрирования
+  const dotY = radius + radius * Math.sin(radians) - 4; // Вычитание половины высоты точки для центрирования
 
   return (
     <div className="button-container">
