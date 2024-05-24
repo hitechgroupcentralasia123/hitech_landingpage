@@ -1,5 +1,5 @@
 import React from "react";
-import CompanyLogo from "../../Assets/Images/image 5.svg"; // Adjust the path to your logo image
+import CompanyLogo from "../../Assets/Images/logofooter.svg"; // Adjust the path to your logo image
 import "../../Assets/Styles/style.css"; // Import the CSS file
 import FacebookF from "../../Assets/Images/facebook.svg";
 import Instagram from "../../Assets/Images/instagram.svg";

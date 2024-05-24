@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import client from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import NewsSection from "../MainPage/Components/News/NewsSection";
