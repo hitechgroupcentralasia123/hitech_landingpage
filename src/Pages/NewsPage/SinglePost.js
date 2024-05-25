@@ -46,12 +46,18 @@ export default function SinglePost() {
           <h1 className="blog_title">{singlePost.title}</h1>
           <div className="post_details">
             {singlePost.authorImage && (
-              <img src={singlePost.authorImage} alt={singlePost.authorName} className="author_image" />
+              <img
+                src={singlePost.authorImage}
+                alt={singlePost.authorName}
+                className="author_image"
+              />
             )}
             <div className="dot_main"></div>
             <p className="author_name">{singlePost.authorName}</p>
             <div className="dot_main"></div>
-            <span className="post_date">{new Date(singlePost.publishedAt).toLocaleDateString()}</span>
+            <span className="post_date">
+              {new Date(singlePost.publishedAt).toLocaleDateString()}
+            </span>
           </div>
         </div>
         {singlePost.mainImage && singlePost.mainImage.asset && (

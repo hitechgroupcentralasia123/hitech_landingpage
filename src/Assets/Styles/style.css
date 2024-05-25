@@ -53,13 +53,15 @@
   width: 100%;
 }
 
-.navbar__menu-container {
+.navbar__menu-container,
+.navbar_right {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-.navbar__menu-container.open {
+.navbar__menu-container.open,
+.button-container {
   display: flex;
 }
 
@@ -69,9 +71,6 @@
 }
 
 .navbar_right {
-  display: flex;
-  align-items: center;
-  gap: 40px;
   max-height: 44px;
 }
 
@@ -123,22 +122,13 @@
   .projects-inner,
   .solutions,
   .activities,
-  .consulting-services, .news {
+  .consulting-services,
+  .news {
     padding: 100px 0;
   }
 
   .projects__content {
     gap: 20px;
-  }
-
-  .projects__content h2 {
-    font-size: 36px;
-    line-height: 46px;
-  }
-
-  .projects__content p {
-    font-size: 16px;
-    line-height: 22px;
   }
 
   .project-display {
@@ -168,14 +158,7 @@
     gap: 16px;
   }
 
-  .solutions__content h2 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
   .solutions__content p {
-    font-size: 16px;
-    line-height: 22px;
     margin-bottom: 20px;
   }
 
@@ -191,11 +174,6 @@
   .stat span {
     font-size: 16px;
     line-height: 20px;
-  }
-
-  .solutions__content p {
-    font-size: 16px;
-    line-height: 22px;
   }
 
   .stat {
@@ -226,7 +204,13 @@
     gap: 16px;
   }
 
-  .trusted-by p {
+  .trusted-by p,
+  .booking_content h2,
+  .text,
+  .service-title,
+  .service-title-details,
+  .blog_title,
+  .news_text_other {
     line-height: 31.2px;
     font-size: 24px;
   }
@@ -240,6 +224,7 @@
   .booking_content {
     flex: 1;
     color: #fff;
+    padding: 0 19px;
   }
 
   .booking_image {
@@ -257,46 +242,34 @@
 
   .news_item {
     width: 100%;
-    max-height: 300px;
-    height: 100%;
+    height: 300px;
   }
 
   .first_news {
     height: 300px;
-    
   }
 
-  .consulting-text h2 {
-    max-width: 473px;
+  .actovities_header,
+  .solutions__content h2,
+  .consulting-text h2,
+  .projects__content h2,
+  .footer__email,
+  .hero__experience p {
     font-size: 36px;
     line-height: 46.8px;
-  }
-
-  .consulting-text p {
-    font-size: 16px;
-    line-height: 22.4px;
-  }
-
-  .actovities_header {
-    font-size: 36px;
-    line-height: 46.8px;
-  }
-
-  .activities__content_p {
-    font-size: 16px;
-    line-height: 22.4px;
   }
 
   .booking_content h2 {
-    font-size: 24px;
-    line-height: 31.2px;
     margin-bottom: 12px;
   }
 
-  .booking_content p {
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 44px;
+  .booking_content p,
+  .solutions__content p,
+  .projects__content p,
+  .activities__content_p,
+  .consulting-text p {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
@@ -328,13 +301,9 @@
     gap: 137px;
   }
 
-  .solutions__content h2 {
-    max-width: 473px;
-    font-size: 48px;
-    line-height: 62.4px;
-  }
-
-  .solutions__content p {
+  .solutions__content p,
+  .activities__content_p,
+  .consulting-text p {
     font-size: 20px;
     line-height: 26px;
     max-width: 590px;
@@ -368,26 +337,36 @@
   }
 
   .consulting-services,
-  .activities, .news, .solutions, .projects {
+  .activities,
+  .news,
+  .solutions,
+  .projects {
     padding: 150px 0;
+  }
+
+  .blog_title {
+    font-size: 36px;
+    line-height: 46.8px;
   }
 
   .consulting-content {
     gap: 40px;
   }
 
+  .news_text_other {
+    font-size: 36px;
+    line-height: 46.8px;
+  }
+
   .consulting-text {
     display: flex;
     flex-direction: row;
     gap: 137px;
-    margin-bottom: 40px;
   }
 
   .trusted-by p {
-    font-size: 36px;
     max-width: 285px;
     width: 100%;
-    line-height: 42px;
   }
 
   .booking_image {
@@ -429,34 +408,28 @@
     max-height: 352px;
   }
 
-  .consulting-text h2 {
-    font-size: 48px;
-    line-height: 62.4px;
-  }
-
-  .consulting-text p {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
   .logos {
     padding: 16.21px 0;
     max-height: 61.59px;
   }
 
-  .actovities_header {
+  .actovities_header,
+  .solutions__content h2,
+  .consulting-text h2 {
+    max-width: 473px;
     font-size: 48px;
     line-height: 62.4px;
   }
 
-  .activities__content_p {
-    font-size: 20px;
-    line-height: 26px;
+  .service-title,
+  .service-title-details,
+  .booking_content h2,
+  .trusted-by p {
+    line-height: 46.8px;
+    font-size: 36px;
   }
 
   .booking_content h2 {
-    font-size: 36px;
-    line-height: 46.8px;
     margin-bottom: 12px;
   }
 
@@ -559,9 +532,7 @@
 
 .hero__experience p {
   font-family: "SF Pro Display";
-  font-size: 36px;
   font-weight: 500;
-  line-height: 46.8px;
   text-align: left;
 }
 
@@ -605,9 +576,6 @@
 }
 
 /* CIRCLE */
-.button-container {
-  display: flex;
-}
 
 .outer-circle {
   width: 120px;
@@ -633,9 +601,7 @@
 
 .text {
   font-family: "SF Pro Display";
-  font-size: 24px;
   font-weight: 500;
-  line-height: 31.2px;
   color: white; /* Adjust text color as needed */
 }
 
@@ -790,6 +756,7 @@
 
   .block__content {
     margin-bottom: 180px;
+    margin-left: auto; /* Push the content to the right */
   }
 }
 
@@ -881,18 +848,10 @@
 }
 
 .consulting-text h2 {
-  width: 100%;
   font-family: "SF Pro Display";
   font-weight: 500;
   text-align: left;
-}
-
-.consulting-text p {
-  max-width: 590px;
   width: 100%;
-  font-family: "SF Pro Display";
-  font-weight: 400;
-  text-align: left;
 }
 
 .consulting-image img {
@@ -961,10 +920,13 @@
   font-weight: 500;
 }
 
-.solutions__content p {
+.solutions__content p,
+.consulting-text p,
+.activities__content_p {
   font-family: "SF Pro Display";
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
+  width: 100%;
 }
 
 .solutions__stats {
@@ -1113,9 +1075,9 @@
   width: 100%;
   text-align: left;
   font-family: "SF Pro Display", sans-serif;
-  font-size: 24px;
   font-weight: 500;
-  line-height: 31.2px;
+  overflow: hidden;
+  white-space: normal;
 }
 
 .service-title-details {
@@ -1126,9 +1088,9 @@
   width: 100%;
   text-align: left;
   font-family: "SF Pro Display", sans-serif;
-  font-size: 24px;
   font-weight: 500;
-  line-height: 31.2px;
+  overflow: hidden;
+  white-space: normal;
 }
 
 .service-details {
@@ -1176,7 +1138,6 @@
   font-family: "SF Pro Display";
   font-weight: 500;
   text-align: left;
-  max-width: 473px;
   width: 100%;
 }
 
@@ -1185,9 +1146,6 @@
 }
 
 .activities__content_p {
-  font-family: "SF Pro Display";
-  font-weight: 400;
-  text-align: left;
   color: rgba(255, 253, 245, 1);
 }
 
@@ -1307,9 +1265,7 @@
   padding: 5px 10px; /* Padding around the text */
   border-radius: 5px; /* Rounded corners */
   font-family: "SF Pro Display";
-  font-size: 36px;
   font-weight: 600;
-  line-height: 43.2px;
   text-align: left;
 }
 
@@ -1535,10 +1491,7 @@
 
 .blog_title {
   font-family: "SF Pro Display", sans-serif;
-  font-size: 36px;
   font-weight: 500;
-  line-height: 46.8px;
-
   margin-bottom: 20px;
 }
 
@@ -1568,6 +1521,8 @@
   font-size: 20px;
   max-width: 793px;
   width: 100%;
+  font-weight: 400;
+  text-align: left; /* Align content to the right */
 }
 
 @media (max-width: 915px) {
@@ -1609,13 +1564,7 @@
   }
 
   .footer__center {
-    max-width: 310px;
     width: 100%;
-  }
-
-  .footer__email {
-    font-size: 36px;
-    line-height: 46.8px;
   }
 
   .footer__logo {
@@ -1741,10 +1690,13 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
 
 /* Error Page Styles */
 .error-container {
@@ -1770,7 +1722,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
