@@ -17,7 +17,7 @@ function MainPage() {
       <Solutions id="solutions" />
       <Activities id="activities" />
       <ConsultingServices id="consulting-services" />
-      <BookingSection id="booking-section" />
+      <BookingSection id="booking" />
       <News id="news" />
       <div id="footer"></div>
     </div>

@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import client from "../../client";
 import "../../Assets/Styles/style.css";
 import LogoFull from "../../Assets/Images/NewsList/Frame.svg";
+import LoadingSpinner from "./LoadingSpinner"; // Импортируйте ваш компонент загрузки
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); 
+  const navigate = useNavigate(); // Используйте хук useNavigate для навигации
 
   useEffect(() => {
     client
@@ -32,9 +35,14 @@ export default function Blog() {
           publishedAt
         }`
       )
-      .then((data) => setPosts(data))
+      .then((data) => {
+        setPosts(data);
+        setIsLoading(false); // Установите состояние загрузки в false после получения данных
+      })
       .catch(console.error);
   }, []);
+
+  if (isLoading) return <LoadingSpinner />; // Показать загрузку, если данные еще загружаются
 
   if (!posts.length) return null;
 
@@ -53,12 +61,17 @@ export default function Blog() {
     return match ? match[0] : text;
   };
 
+  const handleClick = (slug) => {
+    navigate(`/blog/${slug}`);
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
+  
   return (
     <section className="blog_section">
       <div className="container">
         <h1 className="blog_header">News</h1>
         <div className="latest_post">
-          <Link to={`/blog/${latestPost.slug.current}`}>
+        <div onClick={() => handleClick(latestPost.slug.current)}>
             <img
               src={latestPost.mainImage.asset.url}
               alt={latestPost.title}
@@ -84,7 +97,7 @@ export default function Blog() {
                 </span>
               </div>
             </div>
-          </Link>
+            </div>
         </div>
         <div className="other_posts">
           {otherPosts.map((post) => (
@@ -95,7 +108,7 @@ export default function Blog() {
                 className="row_post_image"
               />
               <div className="row_post_content">
-                <Link to={`/blog/${post.slug.current}`}>
+              <div onClick={() => handleClick(post.slug.current)}>
                   <h4 className="row_post_title">{post.title}</h4>
                   <p className="row_post_body">
                     {getFirstSentence(post.body[0].children[0].text)}
@@ -112,12 +125,10 @@ export default function Blog() {
                       {new Date(post.publishedAt).toLocaleDateString()}
                     </span>
                   </div>
-                </Link>
+                  </div>
               </div>
-              <button className="read_more_button">
-                <Link to={`/blog/${post.slug.current}`} className="arrow_link">
-                  <img src={LogoFull} className="logo_fullart" />
-                </Link>
+              <button className="read_more_button" onClick={() => handleClick(post.slug.current)}>
+                <img src={LogoFull} className="logo_fullart" />
               </button>
             </article>
           ))}

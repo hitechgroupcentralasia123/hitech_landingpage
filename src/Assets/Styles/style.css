@@ -261,6 +261,11 @@
     height: 100%;
   }
 
+  .first_news {
+    height: 300px;
+    
+  }
+
   .consulting-text h2 {
     max-width: 473px;
     font-size: 36px;
@@ -1251,6 +1256,7 @@
 
 .booking_form button {
   background-color: transparent;
+  color: #fff;
   border: none;
   font-size: 28px;
   cursor: pointer;
@@ -1710,9 +1716,86 @@
 }
 
 .blog_section a:hover {
-  color: #004080; /* Цвет текста ссылок при наведении */
+  color: #244622; /* Цвет текста ссылок при наведении */
 }
 
 .blog_section a:active {
-  color: #002060; /* Цвет текста ссылок при нажатии */
+  color: #244622; /* Цвет текста ссылок при нажатии */
+}
+
+/* Loading Spinner Styles */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #244622; /* Blue color */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Error Page Styles */
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SF Pro Display";
+  height: 120vh;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  flex-direction: column;
+}
+
+.error-content {
+  text-align: center;
+}
+
+.error-title {
+  font-size: 10rem;
+  font-weight: bold;
+  margin: 0;
+  color: #244622;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.error-message {
+  font-size: 1.5rem;
+  margin: 10px 0 40px;
+  color: #333;
+}
+
+.error-button {
+  padding: 20px 50px;
+  border-radius: 10%;
+  background-color: #244622;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.error-button:hover {
+  background-color: white;
+  color: #244622;
+  border: 2px solid #244622;
 }

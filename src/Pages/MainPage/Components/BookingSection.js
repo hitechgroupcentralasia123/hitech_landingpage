@@ -26,7 +26,7 @@ function BookingSection() {
         from_name: 'From the landing page', // Укажите ваше имя
         from_email: email,
         message: `New booking from ${email}`
-      }, 'NEB6fIcMBkMdECUB0')
+      }, 'jEDPSg7GihhGPb3C4')
       .then((response) => {
         console.log('Email sent successfully!', response.status, response.text);
         setMessage("Email sent successfully!");

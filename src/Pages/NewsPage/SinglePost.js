@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import client from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import NewsSection from "../MainPage/Components/News/NewsSection";
+import LoadingSpinner from "./LoadingSpinner"; // Импортируйте ваш компонент загрузки
 import "../../Assets/Styles/style.css";
 
 export default function SinglePost() {
@@ -35,23 +36,23 @@ export default function SinglePost() {
   }, [slug]);
 
   if (isLoading) {
-    return <h1 style={{margin: "300px 120px"}}>Loading...</h1>;
+    return <LoadingSpinner />;
   }
 
   return (
     <section className="blog_section">
       <div className="container">
-      <div className="header_title">
-        <h1 className="blog_title">{singlePost.title}</h1>
-        <div className="post_details">
-          {singlePost.authorImage && (
-            <img src={singlePost.authorImage} alt={singlePost.authorName} className="author_image" />
-          )}
-          <div className="dot_main"></div>
-          <p className="author_name">{singlePost.authorName}</p>
-          <div className="dot_main"></div>
-          <span className="post_date">{new Date(singlePost.publishedAt).toLocaleDateString()}</span>
-        </div>
+        <div className="header_title">
+          <h1 className="blog_title">{singlePost.title}</h1>
+          <div className="post_details">
+            {singlePost.authorImage && (
+              <img src={singlePost.authorImage} alt={singlePost.authorName} className="author_image" />
+            )}
+            <div className="dot_main"></div>
+            <p className="author_name">{singlePost.authorName}</p>
+            <div className="dot_main"></div>
+            <span className="post_date">{new Date(singlePost.publishedAt).toLocaleDateString()}</span>
+          </div>
         </div>
         {singlePost.mainImage && singlePost.mainImage.asset && (
           <img
