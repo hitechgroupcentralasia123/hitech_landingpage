@@ -16,28 +16,29 @@ function Navbar() {
   };
 
   const handleNavigation = (path, elementId) => {
-    if (location.pathname !== "/") {
+    if (location.pathname !== path) {
       navigate(path);
       setTimeout(() => {
-        const element = document.getElementById(elementId);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
+        scrollToElement(elementId);
       }, 100);
     } else {
-      const element = document.getElementById(elementId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+      scrollToElement(elementId);
     }
     setIsMenuOpen(false); // Close menu after navigation
+  };
+
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
     <nav className="navbar">
       <div className="container">
         <div className="navbar__inner">
-          <div className={`navbar__content ${location.pathname === '/blog' || '/blog/:slug' ? 'navbar-news' : 'navbar-main'}`}>
+          <div className={`navbar__content ${location.pathname === '/blog' || location.pathname.startsWith('/blog/') ? 'navbar-news' : 'navbar-main'}`}>
             <div className="navbar_left">
               <img src={NavLogo} className="navbar__logo" alt="Logo" />
             </div>
@@ -45,19 +46,35 @@ function Navbar() {
               <div className={`navbar__menu-container ${isMenuOpen ? "open" : ""}`}>
                 <ul className="navbar__menu">
                   <li>
-                    <ScrollLink to="about" smooth={true} duration={500} onClick={() => handleNavigation("/", "about")}>About us</ScrollLink>
+                    {location.pathname === "/" ? (
+                      <ScrollLink to="services" smooth={true} duration={500} onClick={toggleMenu}>About us</ScrollLink>
+                    ) : (
+                      <RouterLink to="/" onClick={() => handleNavigation("/", "services")}>About us</RouterLink>
+                    )}
                   </li>
                   <li>
-                    <ScrollLink to="projects" smooth={true} duration={500} onClick={() => handleNavigation("/", "projects")}>Projects</ScrollLink>
+                    {location.pathname === "/" ? (
+                      <ScrollLink to="projects" smooth={true} duration={500} onClick={toggleMenu}>Projects</ScrollLink>
+                    ) : (
+                      <RouterLink to="/" onClick={() => handleNavigation("/", "projects")}>Projects</RouterLink>
+                    )}
                   </li>
                   <li>
                     <RouterLink to="/blog">News</RouterLink>
                   </li>
                   <li>
-                    <ScrollLink to="contacts" smooth={true} duration={500} onClick={() => handleNavigation("/", "contacts")}>Contacts</ScrollLink>
+                    {location.pathname === "/" ? (
+                      <ScrollLink to="footer" smooth={true} duration={500} onClick={toggleMenu}>Contacts</ScrollLink>
+                    ) : (
+                      <RouterLink to="/" onClick={() => handleNavigation("/", "footer")}>Contacts</RouterLink>
+                    )}
                   </li>
                 </ul>
-                <button className="navbar__button" onClick={() => handleNavigation("/", "footer")}>Contact us</button>
+                {location.pathname === "/" ? (
+                  <ScrollLink className="navbar__button" to="booking-section" smooth={true} duration={500} onClick={toggleMenu}>Contact us</ScrollLink>
+                ) : (
+                  <RouterLink className="navbar__button" to="/" onClick={() => handleNavigation("/", "booking-section")}>Contact us</RouterLink>
+                )}
               </div>
               <button className="navbar__burger" onClick={toggleMenu}>
                 <img src={isMenuOpen ? XIcon : Burger} alt="Menu" />

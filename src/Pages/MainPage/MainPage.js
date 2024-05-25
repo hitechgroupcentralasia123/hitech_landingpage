@@ -19,6 +19,7 @@ function MainPage() {
       <ConsultingServices id="consulting-services" />
       <BookingSection id="booking-section" />
       <News id="news" />
+      <div id="footer"></div>
     </div>
   );
 }
