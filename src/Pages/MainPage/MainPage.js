@@ -11,14 +11,14 @@ import BookingSection from './Components/BookingSection';
 function MainPage() {
   return (
     <div>
-      <Hero />
-      <Projects />
-      <Services />
-      <Solutions />
-      <Activities />
-      <ConsultingServices />
-      <BookingSection />
-      <News />
+      <Hero id="hero" />
+      <Projects id="projects" />
+      <Services id="services" />
+      <Solutions id="solutions" />
+      <Activities id="activities" />
+      <ConsultingServices id="consulting-services" />
+      <BookingSection id="booking-section" />
+      <News id="news" />
     </div>
   );
 }
