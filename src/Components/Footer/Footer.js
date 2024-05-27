@@ -19,6 +19,9 @@ function Footer() {
         element.scrollIntoView({ behavior: "smooth" });
       }
       setElementIdToScroll(null);
+    } else {
+      // Scroll to the top when navigating to a new page
+      window.scrollTo(0, 0);
     }
   }, [location, elementIdToScroll]);
 

@@ -1347,18 +1347,22 @@
 .footer__right {
   max-width: 77px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.footer__right p {
+.footer__right a {
   font-family: "SF Pro Display";
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
   text-align: left;
   margin-bottom: 12px;
+  color: #fff;
 }
 
-.footer__right p:hover {
+.footer__right a:hover {
   text-decoration: underline;
 }
 
