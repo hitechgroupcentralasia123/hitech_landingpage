@@ -139,7 +139,7 @@
   .solutions,
   .activities,
   .consulting-services,
-  .news {
+  .news, .services, .booking {
     padding: 100px 0;
   }
 
@@ -356,7 +356,7 @@
   .activities,
   .news,
   .solutions,
-  .projects {
+  .projects, .services, .booking  {
     padding: 150px 0;
   }
 
@@ -383,10 +383,6 @@
   .trusted-by p {
     max-width: 285px;
     width: 100%;
-  }
-
-  .booking_inner {
-    margin: 0 0 150px;
   }
 
   .booking_image {
@@ -978,7 +974,6 @@
 .services {
   overflow: auto; /* Скрыть скроллинг */
   white-space: nowrap;
-  padding: 100px 0;
   background: linear-gradient(0deg, #2a4c31, #2a4c31),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
