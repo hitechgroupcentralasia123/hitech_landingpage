@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import ProjectItem from "./ProjectItem";
-import Photo1 from "../../../../Assets/Images/projectPhoto/Photo.png";
-import Photo2 from "../../../../Assets/Images/projectPhoto/Photo1.png";
-import Photo3 from "../../../../Assets/Images/projectPhoto/Photo2.png";
-import Photo4 from "../../../../Assets/Images/projectPhoto/Photo3.png";
-import Photo5 from "../../../../Assets/Images/projectPhoto/Photo4.png";
-import Photo6 from "../../../../Assets/Images/projectPhoto/Photo5.png";
-import Photo7 from "../../../../Assets/Images/projectPhoto/Photo6.png";
-import Photo8 from "../../../../Assets/Images/projectPhoto/photo8.png";
+import Photo1 from "../../../../Assets/Images/projectPhoto/Photo.webp";
+import Photo2 from "../../../../Assets/Images/projectPhoto/Photo1.webp";
+import Photo3 from "../../../../Assets/Images/projectPhoto/Photo2.webp";
+import Photo4 from "../../../../Assets/Images/projectPhoto/Photo3.webp";
+import Photo5 from "../../../../Assets/Images/projectPhoto/Photo4.webp";
+import Photo6 from "../../../../Assets/Images/projectPhoto/Photo5.webp";
+import Photo7 from "../../../../Assets/Images/projectPhoto/Photo6.webp";
+import Photo8 from "../../../../Assets/Images/projectPhoto/photo8.webp";
 
 const projects = [
   {

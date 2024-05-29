@@ -58,7 +58,9 @@ function Navbar() {
             }`}
           >
             <div className="navbar_left">
-              <img src={NavLogo} className="navbar__logo" alt="Logo" />
+              <RouterLink to="/" onClick={() => setIsMenuOpen(false)}>
+                <img src={NavLogo} className="navbar__logo" alt="Logo" />
+              </RouterLink>
             </div>
             <div className="navbar_right">
               <div

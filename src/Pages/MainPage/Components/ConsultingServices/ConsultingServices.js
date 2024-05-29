@@ -6,7 +6,7 @@ import Logo3 from "../../../../Assets/Images/company/image 10.svg";
 import Logo4 from "../../../../Assets/Images/company/image 11.svg";
 import Logo5 from "../../../../Assets/Images/company/image 9.svg";
 import Logo6 from "../../../../Assets/Images/company/sepcoiii_logo (1) 2.svg";
-import ConsultingPhoto from "../../../../Assets/Images/ConsultingPhoto.png";
+import ConsultingPhoto from "../../../../Assets/Images/ConsultingPhoto.webp";
 
 function ConsultingServices() {
   return (

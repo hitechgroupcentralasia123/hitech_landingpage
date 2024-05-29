@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../../Assets/Styles/style.css";
-import BackGroundPhoto from "../../../../Assets/Images/BackGroundPhoto.png";
+import BackGroundPhoto from "../../../../Assets/Images/BackGroundPhoto.webp";
 import ArrowIcon from "../../../../Assets/Images/arrow_downward.svg";
 import ExperienceCircles from "./CounterButton";
 

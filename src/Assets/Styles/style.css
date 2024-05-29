@@ -94,6 +94,22 @@
   line-height: 22px;
 }
 
+/* Add this CSS to style.css */
+
+/* Hover effect for navigation links */
+.navbar__menu li a:hover {
+  color: rgb(47, 87, 55); /* Change to your desired hover color */
+  text-decoration: none;
+}
+
+/* Active link styling */
+.navbar__menu li a.active {
+  color: rgb(47, 87, 55); /* Change to your desired active color */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
 .navbar__button {
   background: linear-gradient(0deg, #2a4c31, #2a4c31),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
@@ -367,6 +383,10 @@
   .trusted-by p {
     max-width: 285px;
     width: 100%;
+  }
+
+  .booking_inner {
+    margin: 0 0 150px;
   }
 
   .booking_image {
@@ -924,7 +944,7 @@
 .consulting-text p,
 .activities__content_p {
   font-family: "SF Pro Display";
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
   width: 100%;
 }
@@ -1025,6 +1045,8 @@
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.6) 70.04%
   );
+  
+  border-radius: 24px;
   pointer-events: none; /* To ensure the gradient does not block clicks */
 }
 
@@ -1039,6 +1061,8 @@
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.6) 70.04%
   );
+  
+  border-radius: 24px;
 }
 
 .service-item .service-text {
@@ -1107,6 +1131,7 @@
 
 .service-item:hover img {
   transform: scale(1.1);
+  border-radius: 24px;
 }
 
 .service-item:hover .service-text {
