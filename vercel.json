@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "hitech/dist/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "hitech/dist/$1"
+    }
+  ]
+}
