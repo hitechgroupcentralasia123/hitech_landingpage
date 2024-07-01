@@ -5,6 +5,7 @@ import Photo2 from "../../../../Assets/Images/services/photo1716289340 (1).jpeg"
 import Photo1 from "../../../../Assets/Images/services/photo1716289340 (2).jpeg";
 import Photo5 from "../../../../Assets/Images/services/photo1716289340 (3).jpeg";
 import Photo3 from "../../../../Assets/Images/services/photo1716289340.jpeg";
+import Photo6 from "../../../../Assets/Images/POT.jpeg";
 
 const services = [
   {
@@ -12,6 +13,12 @@ const services = [
     details:
       "Hi-Tech Group is a seasoned team with a decade of expertise  in executing renewable energy projects across Central Asia.",
     image: Photo1,
+  },
+  {
+    name: "Pull Out Test (POT)",
+    details:
+      "We offer Pull Out Test(POT) services customized for solar PV plants. Pile foundations are designed to withstand a variety of loads such as axial, lateral, moment, uplift, and combinations thereof. The load tests are planned with the aim of verifying the behavior of the elements working in conditions similar to those of service. We are using various methods, conducted according to international standards and manufacturer or client willings.",
+    image: Photo6,
   },
   {
     name: "Owner’s Engineer Service",
@@ -68,7 +75,7 @@ function Services() {
                 <img src={service.image} alt={service.name} />
                 <div className="service-title">{service.name}</div>
                 <div className="service-text">
-                <div className="service-title-details">{service.name}</div>
+                  <div className="service-title-details">{service.name}</div>
                   <p className="service-details">{service.details}</p>
                 </div>
               </div>
