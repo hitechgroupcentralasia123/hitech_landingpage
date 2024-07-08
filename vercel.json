@@ -1,0 +1,21 @@
+{
+  "builds": [
+    {
+      "src": "hitech/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "hitech/dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/structure(.*)",
+      "dest": "/hitech/dist/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/hitech-landingpage/$1"
+    }
+  ]
+}
