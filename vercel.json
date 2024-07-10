@@ -4,7 +4,7 @@
       "src": "hitech/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "hitech/dist"
+        "distDir": "dist"
       }
     },
     {
