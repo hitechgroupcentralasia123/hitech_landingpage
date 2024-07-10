@@ -6,6 +6,13 @@
       "config": {
         "distDir": "dist"
       }
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
     }
   ],
   "routes": [
@@ -15,7 +22,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/hitech-landingpage/$1"
+      "dest": "/build/$1"
     }
   ]
 }
