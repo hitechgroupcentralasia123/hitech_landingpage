@@ -4,14 +4,14 @@
       "src": "hitech/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "hitech/dist"
+        "distDir": "hitech/build"
       }
     }
   ],
   "routes": [
     {
       "src": "/structure(.*)",
-      "dest": "/hitech/dist/$1"
+      "dest": "/hitech/build/$1"
     },
     {
       "src": "/(.*)",
