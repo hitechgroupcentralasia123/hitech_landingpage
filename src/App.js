@@ -5,8 +5,6 @@ import MainPage from "./Pages/MainPage/MainPage";
 import Blog from "./Pages/NewsPage/Blog";
 import SinglePost from "./Pages/NewsPage/SinglePost";
 import ErrorPage from "./Pages/Error";
-
-
 function App() {
     return (
         <Router>
