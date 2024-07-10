@@ -4,7 +4,7 @@
       "src": "hitech/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "hitech/dist"
       }
     },
     {
@@ -18,7 +18,7 @@
   "routes": [
     {
       "src": "/structure(.*)",
-      "dest": "/dist/$1"
+      "dest": "/hitech/dist/$1"
     },
     {
       "src": "/(.*)",
