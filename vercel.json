@@ -4,18 +4,25 @@
       "src": "hitech/package.json",
       "use": "@vercel/static-build",
       "config": {
+        "distDir": "hitech/dist"
+      }
+    },
+    {
+      "src": "hitech/package.json",
+      "use": "@vercel/static-build",
+      "config": {
         "distDir": "hitech/build"
       }
     }
   ],
   "routes": [
     {
-      "src": "/structure(.*)",
-      "dest": "/hitech/build/$1"
+      "src": "/admin/(.*)",
+      "dest": "/hitech/dist/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/hitech-landingpage/$1"
+      "dest": "/hitech/build/$1"
     }
   ]
 }
