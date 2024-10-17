@@ -21,12 +21,12 @@
       "dest": "/hitech-landing/build/index.html"
     },
     {
-      "src": "/studio(.*)",
-      "dest": "/hitech/dist/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/hitech-landing/build/index.html"
+    },    
+    {
+      "src": "/studio(.*)",
+      "dest": "/hitech/dist/$1"
     }
   ]
 }
