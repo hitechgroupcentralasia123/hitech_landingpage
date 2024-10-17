@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "package.json",
+      "src": "hitech-landing/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build"
       }
     },
     {
-      "src": "hitech/package.json",
+      "src": "hitech-landing/hitech/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
@@ -17,14 +17,16 @@
   ],
   "routes": [
     {
-      "src": "/studio(.*)",
-      "dest": "/hitech-landing/hitech/dist/$1"
-    }
-  ],
-  "rewrites": [
+      "src": "/",
+      "dest": "/hitech-landing/build/index.html"
+    },
     {
-      "source": "/(.*)",
-      "destination": "/hitech-landing/build/index.html"
+      "src": "/(.*)",
+      "dest": "/hitech-landing/build/index.html"
+    },    
+    {
+      "src": "/studio(.*)",
+      "dest": "/hitech/dist/$1"
     }
   ]
 }
