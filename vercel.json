@@ -17,16 +17,14 @@
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "/hitech-landing/build/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/hitech-landing/build/index.html"
-    },    
-    {
       "src": "/studio(.*)",
       "dest": "/hitech/dist/$1"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/hitech-landing/build/index.html"
     }
   ]
 }
