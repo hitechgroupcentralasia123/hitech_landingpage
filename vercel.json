@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "hitech-landing/package.json",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build"
       }
     },
     {
-      "src": "hitech-landing/hitech/package.json",
+      "src": "hitech/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
