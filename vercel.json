@@ -8,7 +8,7 @@
       }
     },
     {
-      "src": "hitech/package.json",
+      "src": "hitech-landing/hitech/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
@@ -18,7 +18,7 @@
   "routes": [
     {
       "src": "/studio(.*)",
-      "dest": "/hitech/dist/$1"
+      "dest": "/hitech-landing/hitech/dist/$1"
     }
   ],
   "rewrites": [
