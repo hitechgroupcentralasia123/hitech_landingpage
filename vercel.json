@@ -2,7 +2,10 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build"
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
     },
     {
       "src": "hitech/package.json",
@@ -14,12 +17,14 @@
   ],
   "routes": [
     {
-      "src": "/structure(.*)",
-      "dest": "/hitech/dist/$1"
-    },
+      "src": "/studio(.*)",
+      "dest": "/hitech-landing/hitech/dist/$1"
+    }
+  ],
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/build/$1"
+      "source": "/(.*)",
+      "destination": "/hitech-landing/build/index.html"
     }
   ]
 }
