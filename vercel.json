@@ -2,15 +2,11 @@
   "builds": [
     {
       "src": "hitech/package.json",
-      "use": "@vercel/static-build",
-      "distDir": "dist"
+      "use": "@vercel/static-build"
     },
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
