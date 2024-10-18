@@ -1,32 +1,25 @@
 {
   "builds": [
     {
-      "src": "hitech_landingpage/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
-    },
-    {
-      "src": "hitech_landingpage/hitech/package.json",
+      "src": "hitech/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
       }
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "/hitech-landing/build/index.html"
-    },
+      "src": "/structure(.*)",
+      "dest": "/hitech/dist/$1"
+    },  
     {
       "src": "/(.*)",
-      "dest": "/hitech-landing/build/index.html"
-    },    
-    {
-      "src": "/studio(.*)",
-      "dest": "/hitech/dist/$1"
+      "dest": "/build/$1"
     }
   ]
 }
