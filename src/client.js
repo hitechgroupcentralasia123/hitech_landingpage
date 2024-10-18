@@ -1,10 +1,8 @@
-import sanityClient from '@sanity/client';
+import client from '@sanity/client';
 
-const client = sanityClient({
+export default client({
     projectId: 'ctrmv7z8', // Ваш project ID
     dataset: 'production', // Ваш dataset
-    useCdn: false, // false, чтобы получать последние данные
-    token: 'skve69rpuuu5QRaXj34ore1RPLH8cclx6pTbRT2uFnT8lLjFEymyCWLAyHJEFK8xkUkER76s7px6E2IjUflWOTybMAGBwcNpS2bjp8oirH7Kxs0NI7QfkAym5Xd6nSeJhNWFMxaTBndhujlomiZ30th0Dq7vtpu2MsUiagGhQpqShaEtR5DY' // Ваш API токен
+    useCdn: true,
 });
 
-export default client;
