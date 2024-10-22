@@ -58,8 +58,13 @@ const projects = [
       "Location: Chulakkurgan village, Turkestan region, Kazakhstan; \nStatus: Commissioned in December 2019; \nClient: Risen Energy (China). \n\nRole of Hi-Tech team: \nGeneral contractor for construction of DC and AC sides; \nGeneral contractor for structure construction contractor \nCommisioning of SPP.",
     image: Photo5,
   },
+  {
+    name: "Tashkent Solar Power Project (200MW)",
+    details:
+      "Location: Yukorichirchik district, Tashkent region, Republic of Uzbekistan; \nStatus: Under construction (2024); \nClient: China Energy Engineering Corporation (China). \n\nRole of Hi-Tech Energy: \nContractor for the construction of photovoltaic power stations; \nCoordination and resource management; \nMobilization and quality assurance in all stages of the project; \nTesting and project consulting.",
+    image: Photo5,
+  },
 ];
-
 
 function Projects() {
   const [openProjectIndex, setOpenProjectIndex] = useState(null);
