@@ -59,11 +59,15 @@ const projects = [
     image: Photo5,
   },
   {
-    name: "Tashkent Solar Power Project (200MW)",
-    details:
-      "Location: Yukorichirchik district, Tashkent region, Republic of Uzbekistan; \nStatus: Under construction (2024); \nClient: China Energy Engineering Corporation (China). \n\nRole of Hi-Tech Energy: \nContractor for the construction of photovoltaic power stations; \nCoordination and resource management; \nMobilization and quality assurance in all stages of the project; \nTesting and project consulting.",
-    image: Photo5,
-  },
+    "name": "Tashkent SPP (200MW)",
+    "details": "Location: Yukorichirchik district, Tashkent region, Republic of Uzbekistan; \nStatus: Commissioned in 2024; \nClient: China Energy Engineering Corporation (China). \n\nRole of Hi-Tech Energy: \nContractor for the construction of photovoltaic power stations; \nCoordination and resource management; \nMobilization and quality assurance in all stages of the project; \nTesting and project consulting.",
+    "image": Photo5
+  },  
+  {
+    "name": "Zhezkazgan SPP (300 kW)",
+    "details": "Location: Zhezkazgan, Kazakhstan; \nStatus: Under construction (2024); \nClient: — \nEPC: Contract \n\nRole of Hi-Tech Energy: \nContractor for material procurement; \nDesign and engineering of photovoltaic power stations; \nConnection of electricity to the grid; \nTesting and project consulting.",
+    "image": Photo6
+  }  
 ];
 
 function Projects() {
